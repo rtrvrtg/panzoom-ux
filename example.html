@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Owl Carousel v2 Accessibility Layer Demo</title>
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+	<script src="https://timmywil.github.io/jquery.panzoom/dist/jquery.panzoom.js"></script>
+    <script src="https://timmywil.github.io/jquery.panzoom/test/libs/jquery.mousewheel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js"></script>
+
+	<script type="text/javascript" src="panzoom.ux.js"></script>
+
+	<style>
+		.panzoom-controls {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	</style>
+	
+</head>
+<body>
+	
+	<div style="width: 100%; height: 600px; overflow: hidden;">
+		<img src="http://placekitten.com/g/2560/1440" id="kitten" style="width: 100%;" />
+	</div>
+
+	<script>
+		$(document).ready(function(){
+			PanZoomUX.init($, $('#kitten'));
+		});
+	</script>
+
+</body>
+</html>
